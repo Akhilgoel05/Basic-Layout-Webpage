@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Sample Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .header {
+        padding: 80px;
+        background-color: #1abc9c;
+        text-align: center;
+        color: white;
+      }
+
+      .header h1 {
+        font-size: 40px;
+      }
+
+      .nav {
+        overflow: hidden;
+        background-color: black;
+      }
+
+      .nav a {
+        padding: 36px;
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        text-decoration: none;
+        float: left;
+        margin: 6px;
+        border-radius: 52px;
+
+      }
+      .nav a:hover {
+        color: black;
+        background-color: #1abc9c;
+      }
+
+
+      .row {
+        display: flex;
+      }
+
+      .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        color: black;
+        padding: 20px;
+      }
+
+      .main {
+        flex: 70%;
+        padding: 20px;
+      }
+
+      .pic {
+        background-color: #aaa;
+        padding: 25px;
+      }
+
+      .footer {
+        text-align: center;
+        background-color: lightgrey;
+        padding: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row {   
+            flex-direction: column;
+            }
+      }
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .navbar a {
+            float: none;
+            width:100%;
+        }
+      }
+          
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#about">About US</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="header">
+      <h1>Sample Website</h1> 
+      <p>This website is created by Me !!</p> 
+    </div>
+
+    <div class="row">
+      
+      <div class="side">
+        <h2>About XYZ Company</h2>
+        <p>Photos of XYZ:</p>
+        <div class="pic" style="height: 150px">Image 1</div>
+        <p>We provide some of the best AI technologies to the client for there betterments.</p>
+        <p>Here are the few examples :-</p>
+        <div class="pic">Image 2</div><br>
+        <div class="pic">Image 3</div><br>
+        <div class="pic">Image 4</div>
+      </div>
+
+      <div class="main">
+        <h2>Artificial intelligence (AI)</h2>
+        <p>John McCarthy, a professor coined the term "artificial intelligence".</p>
+        <div class="pic" style="height: 150px">Image 5</div>
+        <p>Meaning :-</p>
+        <p>Artificial intelligence (AI) is the ability of a computer or a robot controlled by a computer to do tasks that are usually done by humans because they require human intelligence and discernment.</p>
+
+        <h2>Data Science</h2>
+        <p>The term "data science" was proposed by Peter Naur</p>
+        <div class="pic" style="height: 150px">Image 6</div>
+        <p>Meaning :-</p>
+        <p>Data science is the domain of study that deals with vast volumes of data using modern tools and techniques to find unseen patterns, derive meaningful information, and make business decisions.</p>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div> 
+	<script src="index.js"></script>
+  </body>
+</html>
